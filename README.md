@@ -174,7 +174,7 @@ ls /opt/miniconda/bin | grep idba
 
 Now we could create an immutable image ready for use on the HPC or sharing with a collegue via ```sudo singularity build idba.sif idba/```. However a better approach is to create a more detailed ```.def``` file that contains all the steps done above.  That way we can share just the small .def file and someone can recreate our workflow, plus it's good to be able to come back to your work in 6 months and have living documentation about what you did exactly.
 
-idba_dafe.def
+idba_safe.def
 ```bash
 BootStrap: library
 From: ubuntu:20.04
